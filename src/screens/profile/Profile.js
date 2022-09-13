@@ -55,15 +55,15 @@ export default function Profile(props) {
 
   return (
     <>
-      <div className="min-h-screen bg-green-600 flex justify-center items-center">
+      <div className="min-h-screen  bg-white flex justify-center items-center">
         {profileLoading ? (
-          <Spinner thickness="4px" speed="0.65s" color="white" size="md" />
+          <Spinner thickness="4px" speed="0.65s" color="blue" size="xl" />
         ) : profileAppErr || profileServerErr ? (
           <h2 className="text-yellow-400 text-2xl">
             {profileServerErr} {profileAppErr}
           </h2>
         ) : (
-          <div className="h-screen flex overflow-hidden bg-white">
+          <div className="h-screen flex overflow-hidden">
             {/* Static sidebar for desktop */}
 
             <div className="flex flex-col min-w-0 flex-1 overflow-hidden">

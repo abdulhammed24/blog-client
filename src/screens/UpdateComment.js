@@ -57,7 +57,7 @@ const UpdateComment = () => {
             type="text"
             name="text"
             id="text"
-            className="shadow-sm focus:ring-indigo-500  mr-2 focus:border-indigo-500 block w-full p-2 border-2 sm:text-sm border-gray-300 rounded-md"
+            className="shadow-sm focus:ring-indigo-500  mr-2 focus:border-indigo-500 block w-full sm:w-[50rem] p-2 border-2 sm:text-sm border-gray-300 rounded-md"
             placeholder="Add New comment"
           />
 

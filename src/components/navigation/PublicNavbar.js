@@ -1,11 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { Link } from "react-router-dom";
-import {
-  MenuIcon,
-  XIcon,
-  LoginIcon,
-  BookOpenIcon,
-} from "@heroicons/react/outline";
+import { MenuIcon, XIcon, LoginIcon } from "@heroicons/react/outline";
 import { PlusIcon } from "@heroicons/react/solid";
 
 const navigation = [
@@ -25,7 +20,7 @@ const PublicNavbar = () => {
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="container px-4 mx-auto">
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
@@ -39,11 +34,8 @@ const PublicNavbar = () => {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex-shrink-0 flex items-center">
-                  {/* Logo */}
-                  <BookOpenIcon className="h-10 w-10 text-yellow-200" />
-                </div>
-                <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+
+                <div className="hidden  md:flex md:items-center md:space-x-4">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}

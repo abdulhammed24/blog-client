@@ -40,7 +40,7 @@ export default function PostsList() {
       <section>
         <div className="py-20 bg-gray-900 min-h-screen radius-for-skewed">
           <div className="container mx-auto px-4">
-            <div className="mb-16 flex flex-wrap items-center">
+            <div className="mb-16 flex gap-10 flex-wrap items-center justify-between">
               <div className="w-full lg:w-1/2">
                 <span className="text-green-600 font-bold">
                   Latest Posts from our awesome authors
@@ -49,7 +49,7 @@ export default function PostsList() {
                   Latest Post
                 </h2>
               </div>
-              <div className=" block text-right w-1/2">
+              <div className=" block text-right">
                 {/* View All */}
                 <button
                   onClick={() => dispatch(fetchPosts(""))}
@@ -59,9 +59,9 @@ export default function PostsList() {
                 </button>
               </div>
             </div>
-            <div className="flex flex-wrap -mx-3">
-              <div className="mb-8 lg:mb-0 w-full lg:w-1/4 px-3">
-                <div className="py-4 px-6 bg-gray-600 shadow rounded">
+            <div className="grid lg:grid-cols-[1fr_3fr] gap-7">
+              <div className="mb-8 lg:mb-0 w-full  px-3">
+                <div className="px-4 bg-gray-600 shadow rounded">
                   <h4 className="mb-4 text-gray-500 font-bold uppercase">
                     Categories
                   </h4>
@@ -98,7 +98,7 @@ export default function PostsList() {
                   </ul>
                 </div>
               </div>
-              <div className="w-full lg:w-3/4 px-3">
+              <div className="w-full px-3 flex flex-col gap-10 md:gap-7">
                 {/* Post goes here */}
                 {/* {loading ? (
                   <div className="min-h-[80vh] flex justify-center items-center">
@@ -122,9 +122,9 @@ export default function PostsList() {
                   postLists?.map((post, index) => (
                     <div
                       key={post.id || index}
-                      className="flex flex-wrap bg-gray-900 -mx-3  lg:mb-6"
+                      className="flex flex-wrap sm:flex-nowrap gap-7 bg-gray-900"
                     >
-                      <div className="mb-10  w-full lg:w-1/4 ">
+                      <div className="mb-10 mx-auto sm:1/2 lg:w-1/4 ">
                         <div>
                           {/* Post image */}
                           <img
@@ -182,7 +182,7 @@ export default function PostsList() {
                             {post?.title}
                           </h3>
                         </div>
-                        <p className="text-gray-300">{post?.description}</p>
+                        <p className="text-gray-300 ">{post?.description}</p>
                         {/* Read more */}
                         <Link
                           to={`/posts/${post?._id}`}
@@ -228,26 +228,6 @@ export default function PostsList() {
                 )}
               </div>
             </div>
-          </div>
-        </div>
-        <div className="bg-gray-900">
-          <div className="skew bg-green-500 skew-bottom mr-for-radius">
-            <svg
-              className="h-8 md:h-12 lg:h-10 w-full text-gray-900"
-              viewBox="0 0 10 10"
-              preserveAspectRatio="none"
-            >
-              <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
-            </svg>
-          </div>
-          <div className="skew bg-gray-500  skew-bottom ml-for-radius">
-            <svg
-              className="h-8 bg-gray-500 md:h-12 lg:h-20 w-full text-gray-900"
-              viewBox="0 0 10 10"
-              preserveAspectRatio="none"
-            >
-              <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
-            </svg>
           </div>
         </div>
       </section>

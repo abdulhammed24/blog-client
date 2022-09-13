@@ -4,13 +4,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { useDispatch } from "react-redux";
 
 import { Link } from "react-router-dom";
-import {
-  // BellIcon,
-  MenuIcon,
-  XIcon,
-  BookOpenIcon,
-  LogoutIcon,
-} from "@heroicons/react/outline";
+import { MenuIcon, XIcon, LogoutIcon } from "@heroicons/react/outline";
 import { PlusIcon } from "@heroicons/react/solid";
 import { logout } from "../../redux-toolkit/slices/userSlice";
 
@@ -39,7 +33,7 @@ const AdminNavbar = ({ isLogin }) => {
     <Disclosure as="nav" className="bg-green-800">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="container px-4 mx-auto">
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="-ml-2 mr-2 flex items-center md:hidden">
@@ -53,11 +47,8 @@ const AdminNavbar = ({ isLogin }) => {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex-shrink-0 flex items-center">
-                  {/* Logo */}
-                  <BookOpenIcon className="h-10 w-10 text-yellow-200" />
-                </div>
-                <div className="hidden md:ml-6 md:flex md:items-center md:space-x-4">
+
+                <div className="hidden  md:flex md:items-center md:space-x-4">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}

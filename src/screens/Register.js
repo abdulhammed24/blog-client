@@ -68,12 +68,12 @@ const Register = () => {
       <div className="relative container px-4 mx-auto">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-wrap items-center -mx-4">
-            <div className="w-full lg:w-1/2 px-4 mb-16 lg:mb-0">
+            <div className="w-full lg:w-1/2 px-4 ">
               <div className="max-w-md">
                 <span className="text-lg text-blue-400 font-bold">
                   Register Account
                 </span>
-                <h2 className="mt-8 mb-12 text-5xl font-bold font-heading text-white">
+                <h2 className="mt-8 mb-12 text-3xl lg:text-5xl font-bold font-heading text-white">
                   Create an account and start pending down your ideas
                 </h2>
               </div>

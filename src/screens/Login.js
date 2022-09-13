@@ -6,7 +6,8 @@ import { useNavigate, Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import poster from "../images/poster.png";
 import { loginUser } from "../redux-toolkit/slices/userSlice.js";
-import { Spinner, useToast } from "@chakra-ui/react";
+// import { Spinner, useToast } from "@chakra-ui/react";
+import { Spinner } from "@chakra-ui/react";
 
 //Form schema
 const schema = yup
@@ -30,7 +31,7 @@ const Login = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const toast = useToast();
+  // const toast = useToast();
 
   const onSubmit = (data) => {
     dispatch(loginUser(data));
@@ -232,7 +233,7 @@ const Login = () => {
                     </g>
                   </svg>
                 </span>
-                <h2 className="mb-10 text-center text-6xl lg:text-7xl text-gray-300 font-bold font-heading">
+                <h2 className="mb-10 text-center text-3xl md:text-5xl lg:text-7xl text-gray-300 font-bold font-heading">
                   Ready to start? Login Now.
                 </h2>
               </div>
