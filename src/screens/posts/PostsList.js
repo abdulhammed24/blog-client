@@ -61,7 +61,7 @@ export default function PostsList() {
             </div>
             <div className="grid lg:grid-cols-[1fr_3fr] gap-7">
               <div className="mb-8 lg:mb-0 w-full  px-3">
-                <div className="px-4 bg-gray-600 shadow rounded">
+                <div className="p-4 bg-gray-600 shadow rounded">
                   <h4 className="mb-4 text-gray-500 font-bold uppercase">
                     Categories
                   </h4>
