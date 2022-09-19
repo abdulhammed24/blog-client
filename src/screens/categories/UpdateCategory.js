@@ -29,7 +29,7 @@ const UpdateCategory = () => {
   //fetch single category
   useEffect(() => {
     dispatch(fetchCategory(id));
-  }, [dispatch, fetchCategory, id]);
+  }, [dispatch, id]);
 
   //get data from store
   const state = useSelector((state) => state?.category);

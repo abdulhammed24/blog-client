@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "proxy": "https://blog-server-v1.herokuapp.com",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.2.8",

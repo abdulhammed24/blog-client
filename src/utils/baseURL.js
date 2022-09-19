@@ -1,4 +1,4 @@
-const baseUrl = "https://blog-server-v1.herokuapp.com";
+// const baseUrl = "https://blog-server-v1.herokuapp.com";
 
-// const baseUrl = process.env.REACT_APP_API_URL;
+const baseUrl = "http://localhost:8000";
 export default baseUrl;
