@@ -40,7 +40,7 @@ export default function PostsList() {
       <section>
         <div className="py-20 bg-gray-900 min-h-screen radius-for-skewed">
           <div className="container mx-auto px-4">
-            <div className="mb-16 flex gap-10 flex-wrap items-center justify-between">
+            <div className="mb-16 flex gap-4 flex-wrap items-center justify-between">
               <div className="w-full lg:w-1/2">
                 <span className="text-green-600 font-bold">
                   Latest Posts from our awesome authors
@@ -122,7 +122,7 @@ export default function PostsList() {
                   postLists?.map((post, index) => (
                     <div
                       key={post.id || index}
-                      className="flex flex-wrap sm:flex-nowrap gap-7 bg-gray-900"
+                      className="flex flex-wrap sm:flex-nowrap sm:gap-7 bg-gray-900"
                     >
                       <div className="mb-10 mx-auto sm:1/2 lg:w-1/4 ">
                         <div>
